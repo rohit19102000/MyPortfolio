@@ -1,0 +1,114 @@
+.project-container {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        letter-spacing:6px;
+        color: #fff; 
+        font-size: 36px; 
+        font-weight: 900;
+                
+    }
+    .main-container{
+     height: 80vh;
+     width: 100%;
+     display:flex;
+     flex-direction:row;
+     justify-content:center;
+     align-items:center;
+
+    }
+
+}
+.main-container{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:110rem;
+  padding:3rem;
+  flex-wrap:wrap;
+
+  @media  (max-width:720px) {
+  margin-bottom: 50rem;
+  min-height: 100vh;
+  }
+}
+.card{
+  position:relative;
+  width:20%;
+  background:#fff;
+  height:30%;
+  margin:1.5rem 5rem;
+  padding:1rem 1rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  box-shadow:0.05rem 2.2rem rgba(0,0,0,0.5);
+  transition:0.5s ease-in-out;
+  -webkit-transition:0.5s ease-in-out;
+  -moz-transition:0.5s ease-in-out;
+  -ms-transition:0.5s ease-in-out;
+  -o-transition:0.5s ease-in-out;
+  &:hover{
+    height: 45%;
+  }
+  @media (max-width:720px) {
+    width: 35%;
+    height: 10%;
+  }
+}
+.imgBx{
+  position:relative;
+  width:100%;
+  height:80%;
+  top:-3rem;
+  left:.3rem;
+  z-index:1;
+  box-shadow:0.05rem 1rem rgba(2, 4, 63, 0.7);
+  border-radius:0.4rem;
+  -webkit-border-radius:0.4rem;
+  -moz-border-radius:0.4rem;
+  -ms-border-radius:0.4rem;
+  -o-border-radius:0.4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imgBx.a{
+  background-image: url(../../assets/images/project1.png);
+}
+.imgBx.b{
+  background-image: url(../../assets/images/project2.png);
+  
+}
+.imgBx.c{
+  background-image: url(../../assets/images/project3.png);
+}
+.content h2{
+    color:#022c43; 
+    font-weight: 900;
+    font-size:18px;
+    letter-spacing:5px;
+}
+.content {
+    color:#ffd700; 
+    text-align:center;
+    
+}
+.delay{
+  animation:delay 6s ease-in-out;
+  -webkit-animation:delay 6s ease-in-out;
+}
+@keyframes delay {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
